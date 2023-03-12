@@ -24,7 +24,7 @@ export const getAllUsers = createAsyncThunk('users/getAllUsers', async() => {
 
 export const signInUser = createAsyncThunk('users/signInUser', async(formData) => {
     try{
-        const response = await axios.post(`${BASE_URL}/api/v1/auth/sign-in`, 
+        const response = await axios.post(`https://gamerz-adobe-backend.onrender.com/api/v1/auth/sign-in`, 
         {...formData})
         return response.data
     }
