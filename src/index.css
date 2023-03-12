@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+
+body{
+  margin: 0;
+  font-family: 'Saira', sans-serif;
+}
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #223852 #707070;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #707070;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #223852;
+    border-radius: 10px;
+    border: 0px none #ffffff;
+  }

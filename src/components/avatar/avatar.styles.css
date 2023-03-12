@@ -1,0 +1,12 @@
+.avatar-wrapper{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+
+.avatar-wrapper img{
+    border-radius: 50%;
+}
+.avatar-wrapper span{
+    margin-left: 1em;
+}
