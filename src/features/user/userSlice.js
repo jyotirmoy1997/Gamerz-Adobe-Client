@@ -25,7 +25,7 @@ export const getAllUsers = createAsyncThunk('users/getAllUsers', async() => {
 export const signInUser = createAsyncThunk('users/signInUser', async(formData) => {
     try{
         const response = await axios.post(`${BASE_URL}/api/v1/auth/sign-in`, 
-        {...formData}, { withCredentials: true })
+        {...formData})
         return response.data
     }
     catch(error){
@@ -36,7 +36,7 @@ export const signInUser = createAsyncThunk('users/signInUser', async(formData) =
 export const updateUser = createAsyncThunk('users/updateUser', async(formData) => {
     try{
         const response = await axios.patch(`${BASE_URL}/api/v1/users/updateUser`, 
-        {...formData}, { withCredentials: true })
+        {...formData})
         return response.data
     }
     catch(error){
@@ -45,7 +45,7 @@ export const updateUser = createAsyncThunk('users/updateUser', async(formData) =
 })
 
 export const logOutUser = createAsyncThunk('users/logOutUser', async() => {
-    const response = await axios.post(`${BASE_URL}/api/v1/auth/logout`, { withCredentials: true })
+    const response = await axios.post(`${BASE_URL}/api/v1/auth/logout`)
     return response.data
 })
 
