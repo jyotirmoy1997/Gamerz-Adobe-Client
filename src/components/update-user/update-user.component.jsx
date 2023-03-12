@@ -21,7 +21,6 @@ const UpdateUser = () => {
     const dispatch = useDispatch()
     const navigate = useNavigate()
     const user = useSelector(selectUser)
-    console.log(user)
 
     useEffect(() => {
         if(user){
@@ -32,8 +31,6 @@ const UpdateUser = () => {
                     profilePicture : user.profilePicture})
         }
     }, [user])
-
-    console.log(formData)
 
     const handleFileSubmit = async (event) => {
         const file = event.target.files[0]
