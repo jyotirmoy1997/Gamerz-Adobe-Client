@@ -15,7 +15,7 @@ export const fetchComments = createAsyncThunk('comments/fetchComments', async (p
 })
 
 export const addNewComment = createAsyncThunk('comments/addNewComment', async (commentObj) => {
-    const response = await axios.post("${BASE_URL}/api/v1/comments/addNewComment", commentObj)
+    const response = await axios.post(`${BASE_URL}/api/v1/comments/addNewComment`, commentObj)
     return response.data
 })
 

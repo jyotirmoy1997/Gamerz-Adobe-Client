@@ -40,7 +40,7 @@ const SignUpForm = () => {
             return
         }
         try {
-            const response = await axios.post('http://localhost:5000/api/v1/auth/sign-up', {...formData})
+            const response = await axios.post('https://gamerz-adobe-backend.onrender.com/api/v1/auth/sign-up', {...formData})
             setPasswordError('')
             setEmailError('')
             setFormData(initialState)
