@@ -3,7 +3,7 @@ import axios from "axios";
 import { addNewReaction } from "../reactions/reactionSlice";
 import { deleteReaction } from "../reactions/reactionSlice";
 
-const BASE_URL = "https://gamerz-adobe.onrender.com"
+const BASE_URL = "https://gamerz-adobe-backend.onrender.com"
 
 const initialState = {
     postsArray : [],

@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const BASE_URL = "https://gamerz-adobe.onrender.com"
+const BASE_URL = "https://gamerz-adobe-backend.onrender.com"
 
 const initialState = {
     allUsers : [],
